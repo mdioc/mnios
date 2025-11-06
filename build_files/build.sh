@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux niri ly ghostty firefox dolphin NetworkManager
+dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager
 
 # Use a COPR Example:
 #
@@ -23,4 +23,4 @@ dnf5 install -y tmux niri ly ghostty firefox dolphin NetworkManager
 
 systemctl enable podman.socket
 systemctl enable NetworkManager.service
-systemctl enable ly.service
+systemctl enable sddm.service
