@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs neovim entr
+dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entrx
 
 # Use a COPR Example:
 #
