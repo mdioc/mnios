@@ -12,6 +12,15 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entr
 
+copr_install_isolated "ublue-os/packages" \
+    "ublue-bling" \
+    "ublue-brew" \
+    "ublue-fastfetch" \
+    "ublue-motd" \
+    "ublue-polkit-rules" \
+    "ublue-setup-services" \
+    "uupd"
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
