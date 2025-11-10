@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entr
+dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entr qemu virt-manager
 
 copr_install_isolated() {
     local copr_name="$1"
@@ -10,7 +10,7 @@ copr_install_isolated() {
     local packages=("$@")
 
     if [[ ${#packages[@]} -eq 0 ]]; then
-        echo "ERROR: No packages specified for copr_install_isolated"
+mkdir -p ~/.config/containers/systemd/        echo "ERROR: No packages specified for copr_install_isolated"
         return 1
     fi
 
