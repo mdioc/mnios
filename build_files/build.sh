@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entr qemu virt-manager
+dnf5 install -y tmux niri sddm alacritty firefox dolphin NetworkManager NetworkManager-tui fuzzel wofi swayidle swaylock swaybg qt6ct brightnessctl pipewire wireplumber emacs-nox neovim entr qemu virt-manager
 
 copr_install_isolated() {
     local copr_name="$1"
