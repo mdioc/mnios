@@ -35,4 +35,5 @@ copr_install_isolated "ublue-os/packages" \
 
 systemctl enable podman.socket
 systemctl enable NetworkManager.service
+systemctl enable libvirtd.service
 systemctl enable sddm.service
